@@ -134,7 +134,6 @@ def delete_todo(id: int, db: Session = Depends(get_db)):
     db.delete(db_todo)
     # db.query(TodoItemDB).filter(TodoItemDB.id > id).update({TodoItemDB.id: TodoItemDB.id - 1})
     db.commit()
-    return {"message": "Todo item deleted successfully!!"}
+    return {"message": "Todo item deleted successfully"}
 
-
-#hello
+#demo
